@@ -319,6 +319,7 @@ public class GraphView extends View {
             mPaintTitle.setColor(mStyles.titleColor);
             mPaintTitle.setTextSize(mStyles.titleTextSize);
             mPaintTitle.setTextAlign(Paint.Align.CENTER);
+            mPaintTitle.setFlags(Paint.ANTI_ALIAS_FLAG);
             float x = canvas.getWidth()/2;
             float y = mPaintTitle.getTextSize();
             canvas.drawText(mTitle, x, y, mPaintTitle);

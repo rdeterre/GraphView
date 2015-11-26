@@ -136,6 +136,7 @@ public class LineGraphSeries<E extends DataPointInterface> extends BaseSeries<E>
         mPaint = new Paint();
         mPaint.setStrokeCap(Paint.Cap.ROUND);
         mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
         mPaintBackground = new Paint();
 
         mPathBackground = new Path();
